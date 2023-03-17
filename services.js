@@ -154,7 +154,7 @@ async function viewDetails(i) {
         }
     }
     document.getElementById("viewData").innerHTML = disp;
-    await getImage(vehicles[i].manufacturer_model, i);
+    await getImage(vehicles[i].manufacturer + " " + vehicles[i].manufacturer_model + " " + vehicles[i].colour, i);
     document.getElementById("image").innerHTML = '<img src=' + image + ' height = "300" width = "400">';
 }
 
